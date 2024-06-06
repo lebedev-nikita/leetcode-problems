@@ -16,13 +16,22 @@ function twoSum(nums: number[], target: number): number[] {
 }
 
 test("1", () => {
-  expect(twoSum([3, 2, 4], 6).sort()).toEqual([1, 2].sort());
+  const input = [3, 2, 4];
+  const target = 6;
+  const result = [1, 2];
+  expect(twoSum(input, target).sort()).toEqual(result.sort());
 });
 
 test("2", () => {
-  expect(twoSum([2, 7, 11, 15], 9).sort()).toEqual([0, 1].sort());
+  const input = [2, 7, 11, 15];
+  const target = 9;
+  const result = [0, 1];
+  expect(twoSum(input, target).sort()).toEqual(result.sort());
 });
 
 test("3", () => {
-  expect(twoSum([3, 3], 6).sort()).toEqual([0, 1].sort());
+  const input = [3, 3];
+  const target = 6;
+  const result = [0, 1];
+  expect(twoSum(input, target).sort()).toEqual(result.sort());
 });
